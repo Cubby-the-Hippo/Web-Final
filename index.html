@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fritz Reuter Stonemasonry</title>
+
+
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+
+
     <style>
         body {
             background-color: #e0e0e0;
@@ -21,7 +28,7 @@
             border-radius: 5px;
         }
         .carousel-item {
-            height: 60vh;
+            height: 80vh;
             min-height: 300px;
             background: no-repeat center center scroll;
             background-size: cover;
@@ -47,6 +54,7 @@
     </style>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">Fritz Reuter</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,6 +73,7 @@
             </ul>
         </div>
     </nav>
+
 
     <div id="welcomeCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -96,36 +105,27 @@
 
     <div class="container info-section">
         <div class="row">
-            <div class="col-md-4">
-                <h2>Our Opening Hours:</h2>
-                <p id="opening-hours">Click the button to see our opening hours.</p>
-                <button class="btn btn-primary" onclick="loadHours()">Show Hours</button>
+            <div class="col-md-6">
+                <h2 class="middleing">We are Fritz Reuter Stonemasonry</h2>
             </div>
-            <div class="col-md-4">
-                <h2>Our Address:</h2>
-                <p>Stonemasonry Fritz Reuter<br>Ungererstraße 141, Inner Courtyard<br>D-80805 Munich<br>Phone: 089 3613354<br>Fax: 089 36102663<br>Email: info@reuter-natursteine.de</p>
-                <p><a href="#">How to find us</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Natural Stones</h2>
-                <p>Marble tables, garden sculptures, natural stone lamps, window sills in marble and granite, cuttings, floor coverings for indoors and outdoors...</p>
-                <p><a href="#">Read more...</a></p>
+            <div class="col-md-6">
+                <p>Our family-owned master business, which has been in existence since 1884, offers you competent and individual advice when purchasing a new gravestone, new inscriptions for your deceased loved ones and any repair or renovation work. We handle the approval procedures for all cemeteries in Munich and the surrounding area. Our exhibition area next door (Ungererstr. 116) shows you a variety of shapes, materials and processing options. One of our main focuses is the subsequent inscription by master craftsmen, be it chiselled and painted, laid out in lead, fine gold lettering or applied bronze and aluminum inscriptions on existing gravestones, which are always inspected beforehand in order to achieve the best possible result. Furthermore, as a guild company, we carry out professional repairs, cleaning and renovations on gravestones, wooden/wrought crosses and borders, as well as erecting and moving work. We would be happy to advise you on the search for suitable grave accessories (grave lanterns, holy water fonts, vases, etc.). We look forward to welcoming you to our office studio!</p>
             </div>
         </div>
     </div>
 
+
     <div class="container info-section">
         <div class="row">
-            <div class="col-md-6">
-                <h2>About Us</h2>
-                <p>Natural Stone Reuter has been around since 1884!</p>
-                <p>For 130 years, we have been your competent specialist company for natural stones, sculptures, and stonemasonry work...</p>
-                <p><a href="#">Read more...</a></p>
+            <div class="col-md-5">
+                <h2>Our Opening Hours:</h2>
+                <p id="opening-hours">Click the button to see our opening hours.</p>
+                <button class="btn btn-primary" onclick="loadHours()">Show Hours</button>
             </div>
-            <div class="col-md-6">
-                <h2>Contact Us</h2>
-                <p>If you have any questions or need further information, please feel free to contact us:</p>
-                <p>Email: info@reuter-natursteine.de<br>Phone: 089 3613354<br>Fax: 089 36102663</p>
+            <div class="col-md-7">
+                <h2>Our Address:</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10642.50341329333!2d11.580468983934473!3d48.1752918325803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e744c6086a151%3A0x493fdd4bd0766207!2sUngererstra%C3%9Fe%20141%2C%2080805%20M%C3%BCnchen%2C%20Germany!5e0!3m2!1sen!2sus!4v1731024634967!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Phone: 089 3613354<br>Fax: 089 36102663<br>Email: info@reuter-natursteine.de</p>
             </div>
         </div>
     </div>
@@ -134,9 +134,11 @@
         <p>&copy; 2024 Fritz Reuter Stonemasonry. All rights reserved.</p>
     </footer>
 
-    <script src="js/script.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

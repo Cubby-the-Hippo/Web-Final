@@ -40,3 +40,38 @@
     padding: 10px 20px;
     font-size: 1.1rem;
 }
+
+.navbar {
+    background-color: rgba(52, 58, 64, 1); 
+    transition: background-color 0.3s ease; 
+}
+
+
+footer {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    color: #333;
+}
+
+footer h6 {
+    font-weight: bold;
+    color: #d12e2e;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .text-uppercase {
+    letter-spacing: 0.05em;
+}
+
+footer hr {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}

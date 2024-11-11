@@ -5,3 +5,15 @@ function loadHours() {
         For new purchases and longer consultations, please make an appointment with our master. A short call or email is enough!
     `;
 }
+
+
+window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    const scrollThreshold = 10; 
+
+    if (window.scrollY > scrollThreshold) {
+        navbar.style.backgroundColor = "rgba(52, 58, 64, 0.7)"; 
+    } else {
+        navbar.style.backgroundColor = "rgba(52, 58, 64, 1)";
+    }
+});

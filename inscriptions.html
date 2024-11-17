@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/fke8raq.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
         body {
             background-color: #e0e0e0;
         }
@@ -47,7 +48,7 @@
         .btn-primary:hover {
             background-color: #495057;
         }
-        
+
         li, h1, h2{
             font-family: "merriweather", serif;
             font-weight: 700;
@@ -109,7 +110,324 @@
         </a>
     </div>
 
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Basic Package</h2>
+            <p>Contains basic inscriptions</p>
+            <p>Cost: $0-$1000</p>
+            <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#basicModal">View Package</a>
+        </div>
+        <div class="col-md-4">
+            <h2>Advanced Package</h2>
+            <p>Contains advanced inscriptions</p>
+            <p>Cost: $1001-$5000</p>
+            <a class="btn btn-primary" href="#" role="button" data-toggle="modal" data-target="#advancedModal">View Package</a>
+        </div>
+        <div class="col-md-4">
+            <h2>Premium Package</h2>
+            <p>Contains premium inscriptions</p>
+            <p>Cost: $5001+</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#premiumModal">View Package</button>
+        </div>
+    </div>
 
+
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="basicModalLabel">Basic Package</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This package includes basic inscriptions for gravestones. It covers simple text engraving and small decorative elements. It's a great option for those on a budget.</p>
+                <p>Price range: $0-$1000.</p>
+
+                <form id="basicPackageForm">
+                    <div class="form-group">
+                        <label for="nameInput">Your Name:</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Your Email:</label>
+                        <input type="text" class="form-control" id="emailInput" placeholder="johnsmith@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneInput">Your Phone Number:</label>
+                        <input type="text" class="form-control" id="phoneInput" placeholder="+1 123 456 7890" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="introductionInput">Introductions:</label>
+                        <br>
+                        <label for="introductionInput">• Here lies</label><br>
+                        <label for="introductionInput">• In loving memory of</label><br>
+                        <label for="introductionInput">• The final resting place of</label><br>
+                        <label for="introductionInput">• Cherished memories of</label><br>
+                        <label for="introductionInput">• Other</label>
+                        <input type="text" class="form-control" id="introductionInput" placeholder="Enter your introduction" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="relationshipInput">Relationship With You or Loved Ones:</label>
+                        <br>
+                        <label for="relationshipInput">• A beloved daughter and sister</label><br>
+                        <label for="relationshipInput">• A doting husband, father, and grandfather</label><br>
+                        <label for="relationshipInput">• Father to Jack, Scott, and Francesca</label><br>
+                        <label for="relationshipInput">• Survived by her ever-loving children, Laura and Amanda</label><br>
+                        <label for="relationshipInput">• Other</label>
+                        <input type="text" class="form-control" id="relationshipInput" placeholder="Enter your relationship" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lifeInput">Their Life:</label>
+                        <br>
+                        <label for="lifeInput">• A passionate teacher who dedicated her life to others</label><br>
+                        <label for="lifeInput">• A talented painter and fisherman</label><br>
+                        <label for="lifeInput">• A relentless traveller and adventurer</label><br>
+                        <label for="lifeInput">• A pillar of the community</label><br>
+                        <label for="lifeInput">• A life-long artist</label><br>
+                        <label for="lifeInput">• Other</label>
+                        <input type="text" class="form-control" id="lifeInput" placeholder="Enter their life" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="impactInput">Their Impact on You and Your Loved Ones:</label>
+                        <br>
+                        <label for="impactInput">• She will be sorely missed</label><br>
+                        <label for="impactInput">• He made the world a better place</label><br>
+                        <label for="impactInput">• He leaves behind a legacy that long outlives him</label><br>
+                        <label for="impactInput">• Her laugh will be heard in our hearts forever</label><br>
+                        <label for="impactInput">• Respected and remembered by all who knew him</label><br>
+                        <label for="impactInput">• Other</label>
+                        <input type="text" class="form-control" id="impactInput" placeholder="Enter their impact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="wishesInput">Wishes:</label>
+                        <br>
+                        <label for="wishesInput">• May she rest in peace</label><br>
+                        <label for="wishesInput">• We will meet again in a better place</label><br>
+                        <label for="wishesInput">• May he finally rejoin his late wife</label><br>
+                        <label for="wishesInput">• His memory will live on forever</label><br>
+                        <label for="wishesInput">• May love remain where you once were</label><br>
+                        <label for="wishesInput">• Other</label>
+                        <input type="text" class="form-control" id="wishesInput" placeholder="Enter wishes" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fontChoice">Font:</label>
+                        <select class="form-control" id="fontChoice">
+                            <option>Serif</option>
+                            <option>Sans-serif</option>
+                            <option>Calligraphy</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="advancedModal" tabindex="-1" role="dialog" aria-labelledby="advancedModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="advancedModalLabel">Advanced Package</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This package includes more intricate inscriptions with additional customization options, such as fonts and additional symbols. Ideal for more personalized tributes.</p>
+                <p>Price range: $1001-$5000.</p>
+
+                <form id="advancedPackageForm">
+                    <div class="form-group">
+                        <label for="nameInput">Your Name:</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Your Email:</label>
+                        <input type="text" class="form-control" id="emailInput" placeholder="johnsmith@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneInput">Your Phone Number:</label>
+                        <input type="text" class="form-control" id="phoneInput" placeholder="+1 123 456 7890" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="introductionInput">Introductions:</label>
+                        <br>
+                        <label for="introductionInput">• Here lies</label><br>
+                        <label for="introductionInput">• In loving memory of</label><br>
+                        <label for="introductionInput">• The final resting place of</label><br>
+                        <label for="introductionInput">• Cherished memories of</label><br>
+                        <label for="introductionInput">• Other</label>
+                        <input type="text" class="form-control" id="introductionInput" placeholder="Enter your introduction" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="relationshipInput">Relationship With You or Loved Ones:</label>
+                        <br>
+                        <label for="relationshipInput">• A beloved daughter and sister</label><br>
+                        <label for="relationshipInput">• A doting husband, father, and grandfather</label><br>
+                        <label for="relationshipInput">• Father to Jack, Scott, and Francesca</label><br>
+                        <label for="relationshipInput">• Survived by her ever-loving children, Laura and Amanda</label><br>
+                        <label for="relationshipInput">• Other</label>
+                        <input type="text" class="form-control" id="relationshipInput" placeholder="Enter your relationship" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lifeInput">Their Life:</label>
+                        <br>
+                        <label for="lifeInput">• A passionate teacher who dedicated her life to others</label><br>
+                        <label for="lifeInput">• A talented painter and fisherman</label><br>
+                        <label for="lifeInput">• A relentless traveller and adventurer</label><br>
+                        <label for="lifeInput">• A pillar of the community</label><br>
+                        <label for="lifeInput">• A life-long artist</label><br>
+                        <label for="lifeInput">• Other</label>
+                        <input type="text" class="form-control" id="lifeInput" placeholder="Enter their life" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="impactInput">Their Impact on You and Your Loved Ones:</label>
+                        <br>
+                        <label for="impactInput">• She will be sorely missed</label><br>
+                        <label for="impactInput">• He made the world a better place</label><br>
+                        <label for="impactInput">• He leaves behind a legacy that long outlives him</label><br>
+                        <label for="impactInput">• Her laugh will be heard in our hearts forever</label><br>
+                        <label for="impactInput">• Respected and remembered by all who knew him</label><br>
+                        <label for="impactInput">• Other</label>
+                        <input type="text" class="form-control" id="impactInput" placeholder="Enter their impact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="wishesInput">Wishes:</label>
+                        <br>
+                        <label for="wishesInput">• May she rest in peace</label><br>
+                        <label for="wishesInput">• We will meet again in a better place</label><br>
+                        <label for="wishesInput">• May he finally rejoin his late wife</label><br>
+                        <label for="wishesInput">• His memory will live on forever</label><br>
+                        <label for="wishesInput">• May love remain where you once were</label><br>
+                        <label for="wishesInput">• Other</label>
+                        <input type="text" class="form-control" id="wishesInput" placeholder="Enter wishes" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fontChoice">Font:</label>
+                        <select class="form-control" id="fontChoice">
+                            <option>Serif</option>
+                            <option>Sans-serif</option>
+                            <option>Calligraphy</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+<div class="modal fade" id="premiumModal" tabindex="-1" role="dialog" aria-labelledby="premiumModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="premiumModalLabel">Premium Package</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>This package includes the most intricate engravings, customizable designs, and a selection of premium fonts and images. Perfect for those who want a unique and lasting tribute.</p>
+                <p>Price range: $5001+.</p>
+
+                <form id="premiumPackageForm">
+                    <div class="form-group">
+                        <label for="nameInput">Your Name:</label>
+                        <input type="text" class="form-control" id="nameInput" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Your Email:</label>
+                        <input type="text" class="form-control" id="emailInput" placeholder="johnsmith@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneInput">Your Phone Number:</label>
+                        <input type="text" class="form-control" id="phoneInput" placeholder="+1 123 456 7890" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="introductionInput">Introductions:</label>
+                        <br>
+                        <label for="introductionInput">• Here lies</label><br>
+                        <label for="introductionInput">• In loving memory of</label><br>
+                        <label for="introductionInput">• The final resting place of</label><br>
+                        <label for="introductionInput">• Cherished memories of</label><br>
+                        <label for="introductionInput">• Other</label>
+                        <input type="text" class="form-control" id="introductionInput" placeholder="Enter your introduction" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="relationshipInput">Relationship With You or Loved Ones:</label>
+                        <br>
+                        <label for="relationshipInput">• A beloved daughter and sister</label><br>
+                        <label for="relationshipInput">• A doting husband, father, and grandfather</label><br>
+                        <label for="relationshipInput">• Father to Jack, Scott, and Francesca</label><br>
+                        <label for="relationshipInput">• Survived by her ever-loving children, Laura and Amanda</label><br>
+                        <label for="relationshipInput">• Other</label>
+                        <input type="text" class="form-control" id="relationshipInput" placeholder="Enter your relationship" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lifeInput">Their Life:</label>
+                        <br>
+                        <label for="lifeInput">• A passionate teacher who dedicated her life to others</label><br>
+                        <label for="lifeInput">• A talented painter and fisherman</label><br>
+                        <label for="lifeInput">• A relentless traveller and adventurer</label><br>
+                        <label for="lifeInput">• A pillar of the community</label><br>
+                        <label for="lifeInput">• A life-long artist</label><br>
+                        <label for="lifeInput">• Other</label>
+                        <input type="text" class="form-control" id="lifeInput" placeholder="Enter their life" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="impactInput">Their Impact on You and Your Loved Ones:</label>
+                        <br>
+                        <label for="impactInput">• She will be sorely missed</label><br>
+                        <label for="impactInput">• He made the world a better place</label><br>
+                        <label for="impactInput">• He leaves behind a legacy that long outlives him</label><br>
+                        <label for="impactInput">• Her laugh will be heard in our hearts forever</label><br>
+                        <label for="impactInput">• Respected and remembered by all who knew him</label><br>
+                        <label for="impactInput">• Other</label>
+                        <input type="text" class="form-control" id="impactInput" placeholder="Enter their impact" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="wishesInput">Wishes:</label>
+                        <br>
+                        <label for="wishesInput">• May she rest in peace</label><br>
+                        <label for="wishesInput">• We will meet again in a better place</label><br>
+                        <label for="wishesInput">• May he finally rejoin his late wife</label><br>
+                        <label for="wishesInput">• His memory will live on forever</label><br>
+                        <label for="wishesInput">• May love remain where you once were</label><br>
+                        <label for="wishesInput">• Other</label>
+                        <input type="text" class="form-control" id="wishesInput" placeholder="Enter wishes" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fontChoice">Font:</label>
+                        <select class="form-control" id="fontChoice">
+                            <option>Serif</option>
+                            <option>Sans-serif</option>
+                            <option>Calligraphy</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>

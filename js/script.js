@@ -17,3 +17,5 @@ window.addEventListener("scroll", function() {
         navbar.style.backgroundColor = "rgba(52, 58, 64, 1)";
     }
 });
+
+

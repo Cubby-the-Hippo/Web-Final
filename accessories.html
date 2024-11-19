@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fritz Reuter Stonemasonry</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/fke8raq.css">
+    <link rel="stylesheet" href="https://use.typekit.net/fke8raq.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            background-color: #e0e0e0;
+        }
+        .navbar {
+            background-color: #343a40;
+            margin-bottom: 20px;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .navbar-nav .nav-item .nav-link.active {
+            background-color: #495057;
+            border-radius: 5px;
+        }
+        .carousel-item {
+            height: 80vh;
+            min-height: 300px;
+            background: no-repeat center center scroll;
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+        }
+        .info-section {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #c0c0c0;
+            padding: 10px;
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #343a40;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #495057;
+        }
+
+        li, h1, h2{
+            font-family: "merriweather", serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        p{
+            font-family: "source-sans-pro", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+        .image-tile1 {
+            position: relative;
+            height: 300px; 
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            border-radius: 8px; 
+            overflow: hidden; 
+        }
+
+
+        .image-tile1 .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-tile1 h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .image-tile1 .btn {
+            padding: 10px 20px;
+            font-size: 1.1rem;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">Fritz Reuter</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="gravestones.html">Gravestones</a></li>
+                <li class="nav-item"><a class="nav-link" href="inscriptions.html">Inscriptions</a></li>
+                <li class="nav-item"><a class="nav-link active" href="accessories.html">Accessories</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="welcomeCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('images/shanxi-black-granite-headstone-with-cross-design.jpg');">
+                <div class="d-flex h-100 align-items-center justify-content-center">
+                    <h1 class="hero-text">Accessories</h1>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/Zweiteiliger\ Grabstein\ aus\ Granit\ mit\ Kreuz\ als\ zentrales\ Motiv.jpg');">
+                <div class="d-flex h-100 align-items-center justify-content-center">
+                    <h1 class="hero-text">Accessories</h1>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/81Wztv8taIL._AC_UF1000\,1000_QL80_.jpg');">
+                <div class="d-flex h-100 align-items-center justify-content-center">
+                    <h1 class="hero-text">Accessories</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+        <a class="carousel-control-prev" href="#welcomeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#welcomeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4 project-tile" style="background-image: url('images/217-T.jpg');">
+                <div class="overlay">
+                    <h2>Scrolls</h2>
+                    <a href="https://www.everlifememorials.com/headstone-accessories-s/109.htm" target="blank" class="btn btn-light">View Projects</a>
+                </div>
+            </div>
+            <div class="col-md-4 project-tile" style="background-image: url('images/228-T.jpg');">
+                <div class="overlay">
+                    <h2>Statues</h2>
+                    <a href="https://www.everlifememorials.com/headstone-accessories-s/109.htm" target="blank" class="btn btn-light">View Projects</a>
+                </div>
+            </div>
+            <div class="col-md-4 project-tile" style="background-image: url('images/449-T.jpg');">
+                <div class="overlay">
+                    <h2>Vases</h2>
+                    <a href="https://www.everlifememorials.com/headstone-accessories-s/109.htm" target="blank" class="btn btn-light">View Projects</a>
+                </div>
+            </div>
+            <div class="col-md-4 project-tile" style="background-image: url('images/448-T.jpg');">
+                <div class="overlay">
+                    <h2>Pictures</h2>
+                    <a href="https://www.everlifememorials.com/headstone-accessories-s/109.htm" target="blank" class="btn btn-light">View Projects</a>
+                </div>
+            </div>
+            <div class="col-md-4 project-tile" style="background-image: url('images/MA-turtle-157GV-1.jpg');">
+                <div class="overlay">
+                    <h2>Turtle</h2>
+                    <a href="https://www.everlifememorials.com/Pet-Ashes-Jewelry-s/173.htm" target="blank" class="btn btn-light">View Projects</a>
+                </div>
+            </div>
+            <div class="col-md-4 project-tile" style="background-image: url('images/GR-cross-pendant-calico-1.jpg');">
+                <div class="overlay">
+                    <h2>Cross</h2>
+                    <a href="https://www.everlifememorials.com/searchresults.asp?Search=cross&Submit=" target="blank" class="btn btn-light">View Projects</a>
+                </div>
+            </div>
+            <div class="col-md-4 project-tile" style="background-image: url('images/Laternen_05.jpg');">
+                <div class="overlay">
+                    <h2>Lantern</h2>
+                    <a href="https://www.steinmetz-reuter.de/grabzubehoer.html" target="blank" class="btn btn-light">View Projects</a>
+                </div>
+            </div>
+            <div class="col-md-4 project-tile" style="background-image: url('images/MA-dog-bone-165GV-1.jpg')">
+                <div class="overlay">
+                    <h2>Dog Bone</h2>
+                    <a href="https://www.everlifememorials.com/Pet-Ashes-Jewelry-s/173.htm" target="blank" class="btn btn-light">View Projects</a>
+                </div>
+            </div>
+            <div class="col-md-4 project-tile" style="background-image: url('images/KE-771084-1.jpg');">
+                <div class="overlay">
+                    <h2>Urns</h2>
+                    <a href="https://www.everlifememorials.com/wood-urns-s/27.htm" target="blank" class="btn btn-light">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="container my-5">
+        <div class="row text-center text-md-left">
+            <div class="col-md-3 mb-4">
+                <h2 style="font-family: serif; font-size: 2.5rem; color: #7d88a3;">Fritz Reuter</h2>
+                <h4 style="font-weight: bold; color: #7d88a3;">STONEMASONRY</h4>
+                <hr>
+                <h6 class="text-uppercase font-weight-bold text-danger">Get in Touch</h6>
+                <p>Phone: 089 3613354</p>
+                <p>Fax: 089 36102663</p>
+                <p>Email: <a href="mailto:info@reuter-natursteine.de">info@reuter-natursteine.de</a></p>
+                <p>Ungererstraße 141,<br>80805 München, Germany</p>
+            </div>
+    
+
+            <div class="col-md-2 mb-4">
+                <h6 class="text-uppercase font-weight-bold text-danger">Menu</h6>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gravestones.html">Gravestones</a></li>
+                    <li><a href="inscriptions.html">Inscriptions</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </div>
+    
+    
+
+            <div class="col-md-3 mb-4">
+                <h6 class="text-uppercase font-weight-bold text-danger">Our Services</h6>
+                <ul class="list-unstyled">
+                    <li>New Tombstone Installation</li>
+                    <li>Gravestone Restoration</li>
+                    <li>Tombstone Cleaning</li>
+                    <li>Monument Restoration</li>
+                    <li>Cemetery Marker Repair</li>
+                    <li>Tombstone Relocation</li>
+                </ul>
+            </div>
+    
+
+            <div class="col-md-4 mb-4">
+                <h6 class="text-uppercase font-weight-bold text-danger">Opening Hours</h6>
+                <p>Monday - Thursday: 10 AM - 5 PM</p>
+                <p>Friday: 10 AM - 4 PM</p>
+                <p>Saturday - Sunday: Closed</p>
+                <h6 class="text-uppercase font-weight-bold text-danger mt-4">Find Us</h6>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21285.012153805812!2d11.598923!3d48.175279!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e744c6086a151%3A0x493fdd4bd0766207!2sUngererstra%C3%9Fe%20141%2C%2080805%20M%C3%BCnchen%2C%20Germany!5e0!3m2!1sen!2sus!4v1731291382898!5m2!1sen!2sus" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    
+        <hr>
+    
+
+        <div class="row">
+            <div class="col-md-6 text-center text-md-left">
+                <p>&copy; 2024 Fritz Reuter Stonemasonry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+
+
+
+</body>
+</html>

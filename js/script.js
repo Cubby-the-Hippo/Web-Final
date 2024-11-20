@@ -10,3 +10,20 @@ window.addEventListener("scroll", function() {
 });
 
 
+
+document.getElementById("basicPackageForm").addEventListener("submit", handleFormSubmit);
+document.getElementById("advancedPackageForm").addEventListener("submit", handleFormSubmit);
+document.getElementById("premiumPackageForm").addEventListener("submit", handleFormSubmit);
+
+
+function handleFormSubmit(event) {
+    event.preventDefault(); 
+
+
+    var modalBody = this.closest(".modal-body");
+
+
+    modalBody.innerHTML = '<p style="color: green; font-weight: bold;">Form Completed! Thank you for your submission.</p>';
+}
+
+
